@@ -3,8 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habitly - Build Better Habits, One Day at a Time</title>
-    <meta name="description" content="Track your habits, build streaks, and transform your life with Habitly. A simple and beautiful habit tracker for Android.">
+    <title>Habitly — Gamified Habit Tracker with Challenges</title>
+    <meta name="description" content="Habitly is a gamified habit tracker with XP, achievements, streaks, and social challenges. Build better habits, earn rewards, and compete with friends. Available on Android.">
+    <meta name="keywords" content="habit tracker, habit app, daily habits, streak tracker, gamified habits, XP, achievements, habit challenges, android habit app, freeze days">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://usehabitly.app/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Habitly — Gamified Habit Tracker with Challenges">
+    <meta property="og:description" content="Track habits, earn XP, compete with friends. Level up your daily routine.">
+    <meta property="og:image" content="https://usehabitly.app/images/logo.png">
+    <meta property="og:url" content="https://usehabitly.app">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Habitly">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Habitly — Gamified Habit Tracker with Challenges">
+    <meta name="twitter:description" content="Track habits, earn XP, compete with friends. Level up your daily routine.">
+    <meta name="twitter:image" content="https://usehabitly.app/images/logo.png">
+    <meta name="twitter:site" content="@usehabitly">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#FF6B6B">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -84,14 +106,8 @@
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
                 </a>
-                <!-- Blog Icon (pending) -->
-                <a href="#" class="nav-icon text-soft-gray hover:text-slate opacity-50 cursor-not-allowed" title="Blog - Coming Soon">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
-                    </svg>
-                </a>
-                <!-- Contact Icon (pending) -->
-                <a href="#" class="nav-icon text-soft-gray hover:text-slate" title="Contact Us">
+                <!-- Contact Icon -->
+                <a href="mailto:habitlyhq@gmail.com" class="nav-icon text-soft-gray hover:text-slate" title="Contact Us">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
@@ -105,13 +121,13 @@
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div class="text-center md:text-left">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate leading-tight mb-6">
-                    Build Better Habits,
-                    <span class="text-coral">One Day at a Time</span>
+                    The Habit Tracker That
+                    <span class="text-coral">Feels Like a Game</span>
                 </h1>
                 <p class="text-lg md:text-xl text-soft-gray mb-8 max-w-lg">
-                    Track your daily habits, build powerful streaks, and transform your life with a simple and beautiful habit tracker.
+                    Earn XP, unlock achievements, compete with friends. Start tracking in seconds — no signup required.
                 </p>
-               <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"> 
+               <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                     <!-- Google Play Button -->
                     <a href="https://play.google.com/store/apps/details?id=com.habitly.habitly" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-slate text-white px-6 py-3 rounded-xl hover:bg-slate/90 transition-colors">
                         <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
@@ -125,7 +141,7 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <img src="images/mockup_home.png" alt="Habitly App Screenshot" class="w-72 md:w-80 lg:w-96">
+                <img src="images/mockup_home.png" alt="Habitly app showing daily habit progress with streaks and year heatmap" class="w-72 md:w-80 lg:w-96">
             </div>
         </div>
     </section>
@@ -134,53 +150,53 @@
     <section id="features" class="py-20 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate mb-4">Everything You Need</h2>
-                <p class="text-soft-gray text-lg max-w-2xl mx-auto">Simple yet powerful features to help you build and maintain your habits.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate mb-4">More Than Just a Habit Tracker</h2>
+                <p class="text-soft-gray text-lg max-w-2xl mx-auto">The features that make Habitly different from every other habit app.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Feature 1 -->
+                <!-- Feature 1: Gamification -->
                 <div class="feature-card bg-cream p-8 rounded-2xl">
                     <div class="w-14 h-14 bg-coral/10 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-7 h-7 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-lg text-slate mb-2">Daily Tracking</h3>
-                    <p class="text-soft-gray">Easily mark your habits as complete with a simple tap.</p>
+                    <h3 class="font-semibold text-lg text-slate mb-2">Earn XP & Level Up</h3>
+                    <p class="text-soft-gray">Gain experience points for every habit. Unlock 35+ achievements across 5 rarities.</p>
                 </div>
 
-                <!-- Feature 2 -->
+                <!-- Feature 2: Freeze Days -->
                 <div class="feature-card bg-cream p-8 rounded-2xl">
                     <div class="w-14 h-14 bg-turquoise/10 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-7 h-7 text-turquoise" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-lg text-slate mb-2">Streaks & Stats</h3>
-                    <p class="text-soft-gray">Build streaks and track your progress over time.</p>
+                    <h3 class="font-semibold text-lg text-slate mb-2">Streaks Without Guilt</h3>
+                    <p class="text-soft-gray">Freeze Days protect your streak on tough days. One missed day doesn't erase your progress.</p>
                 </div>
 
-                <!-- Feature 3 -->
+                <!-- Feature 3: Social Challenges -->
                 <div class="feature-card bg-cream p-8 rounded-2xl">
                     <div class="w-14 h-14 bg-soft-yellow/30 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-7 h-7 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-lg text-slate mb-2">Smart Reminders</h3>
-                    <p class="text-soft-gray">Never forget a habit with customizable notifications.</p>
+                    <h3 class="font-semibold text-lg text-slate mb-2">Social Challenges</h3>
+                    <p class="text-soft-gray">Create challenges, invite friends, compete on leaderboards. Habits are easier together.</p>
                 </div>
 
-                <!-- Feature 4 -->
+                <!-- Feature 4: Visual Progress -->
                 <div class="feature-card bg-cream p-8 rounded-2xl">
                     <div class="w-14 h-14 bg-soft-green/20 rounded-xl flex items-center justify-center mb-4">
                         <svg class="w-7 h-7 text-soft-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-lg text-slate mb-2">Achievements</h3>
-                    <p class="text-soft-gray">Unlock achievements and celebrate your milestones.</p>
+                    <h3 class="font-semibold text-lg text-slate mb-2">See Your Real Data</h3>
+                    <p class="text-soft-gray">GitHub-style heatmap, weekly view, monthly grid. Your progress is always visible.</p>
                 </div>
             </div>
         </div>
@@ -195,9 +211,9 @@
             </div>
 
             <div class="flex flex-wrap justify-center gap-8">
-                <img src="images/mockup_habits.png" alt="Habits Screen" class="w-52 md:w-60 lg:w-64">
-                <img src="images/mockup_progress.png" alt="Progress Screen" class="w-52 md:w-60 lg:w-64">
-                <img src="images/mockup_achievement.png" alt="Achievements Screen" class="w-52 md:w-60 lg:w-64">
+                <img src="images/mockup_habits.png" alt="Habitly habits list showing daily streaks and mini heatmap grid" class="w-52 md:w-60 lg:w-64">
+                <img src="images/mockup_progress.png" alt="Habitly year in review heatmap and monthly calendar view" class="w-52 md:w-60 lg:w-64">
+                <img src="images/mockup_achievement.png" alt="Habitly achievement unlocked popup with XP reward" class="w-52 md:w-60 lg:w-64">
             </div>
         </div>
     </section>
