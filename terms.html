@@ -46,7 +46,7 @@
     <!-- Content -->
     <main class="max-w-4xl mx-auto px-6 py-12">
         <h1 class="text-3xl md:text-4xl font-bold text-slate mb-2">Términos y Condiciones de Uso de Habitly</h1>
-        <p class="text-soft-gray mb-8"><strong>Última actualización:</strong> Enero 2026</p>
+        <p class="text-soft-gray mb-8"><strong>Última actualización:</strong> Abril 2026</p>
 
         <div class="prose prose-slate max-w-none space-y-8">
 
@@ -61,12 +61,14 @@
                 <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">2. Descripción del Servicio</h2>
                 <p class="text-soft-gray mt-4">Habitly es una aplicación móvil diseñada para ayudar a los usuarios a:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li>Crear y dar seguimiento a hábitos personales</li>
-                    <li>Mantener rachas de cumplimiento de hábitos</li>
-                    <li>Participar en un sistema de gamificación (XP, niveles, logros)</li>
-                    <li>Conectar con amigos y participar en challenges grupales</li>
-                    <li>Recibir recordatorios personalizados</li>
+                    <li>Crear y dar seguimiento a hábitos personales con frecuencia diaria, semanal o personalizada</li>
+                    <li>Mantener rachas de cumplimiento y protegerlas con Freeze Days</li>
+                    <li>Participar en un sistema de gamificación privado (XP, niveles, logros)</li>
+                    <li>Recibir recordatorios personalizados y ver sus hábitos desde un widget de la pantalla de inicio</li>
+                    <li>Visualizar su progreso mediante heatmaps y estadísticas, y exportar sus datos en CSV o PDF</li>
+                    <li>Acceder opcionalmente a funciones premium mediante una suscripción o compra única</li>
                 </ul>
+                <p class="text-soft-gray mt-2">Habitly no incluye funciones sociales públicas (no hay amigos, challenges grupales ni tablas de clasificación). Toda la experiencia es individual.</p>
             </section>
 
             <!-- 3. Registro y Cuenta -->
@@ -101,13 +103,13 @@
                     <h4 class="font-semibold text-slate">3.4 Cuentas de Invitado</h4>
                     <p class="text-soft-gray mt-2">Habitly ofrece un modo invitado que permite explorar la aplicación sin registro completo. Las cuentas de invitado tienen las siguientes características:</p>
                     <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                        <li><strong>Límite de hábitos:</strong> Máximo 5 hábitos activos</li>
-                        <li><strong>Funciones sociales:</strong> Deshabilitadas (amigos, challenges, leaderboards)</li>
-                        <li><strong>Datos preservados:</strong> Sus hábitos, registros, XP y logros se guardan</li>
-                        <li><strong>Migración:</strong> Puede convertir su cuenta de invitado a una cuenta completa en cualquier momento, conservando todos sus datos</li>
-                        <li><strong>Sin correo requerido:</strong> Solo necesita un nombre de usuario</li>
+                        <li><strong>Límite de hábitos:</strong> Máximo 5 hábitos activos.</li>
+                        <li><strong>Datos preservados:</strong> Sus hábitos, registros, XP, logros y freeze days se guardan en el servidor asociados a un token de invitado.</li>
+                        <li><strong>Migración:</strong> Puede convertir su cuenta de invitado a una cuenta completa (email/contraseña o Google) en cualquier momento, conservando todo su progreso.</li>
+                        <li><strong>Sin correo requerido:</strong> Solo necesita un nombre de usuario.</li>
+                        <li><strong>Persistencia limitada:</strong> Si pierde el token de invitado (por ejemplo, al desinstalar la aplicación o cambiar de dispositivo sin migrar previamente), el progreso asociado puede no ser recuperable.</li>
                     </ul>
-                    <p class="text-soft-gray mt-2">Al migrar a una cuenta completa (email/contraseña o Google), todos sus datos de invitado se transfieren automáticamente.</p>
+                    <p class="text-soft-gray mt-2">Al migrar a una cuenta completa, todos sus datos de invitado se transfieren automáticamente.</p>
                 </div>
             </section>
 
@@ -119,22 +121,19 @@
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
                     <li>Usar la Aplicación solo para fines personales y no comerciales</li>
                     <li>Proporcionar información precisa en su perfil</li>
-                    <li>Respetar a otros usuarios en funciones sociales</li>
-                    <li>Cumplir con todas las leyes aplicables</li>
+                    <li>Cumplir con todas las leyes y regulaciones aplicables</li>
                 </ul>
 
                 <h3 class="text-xl font-medium text-slate mt-6">4.2 Usted No Debe:</h3>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li>Crear cuentas falsas o múltiples cuentas</li>
-                    <li>Compartir su cuenta con terceros</li>
-                    <li>Intentar acceder a cuentas de otros usuarios</li>
-                    <li>Usar la Aplicación para actividades ilegales</li>
-                    <li>Manipular el sistema de gamificación de forma fraudulenta</li>
-                    <li>Acosar, amenazar o intimidar a otros usuarios</li>
-                    <li>Publicar contenido ofensivo, difamatorio o inapropiado</li>
-                    <li>Intentar hackear, descompilar o modificar la Aplicación</li>
-                    <li>Usar bots o scripts automatizados</li>
-                    <li>Interferir con el funcionamiento de los servidores</li>
+                    <li>Crear cuentas falsas o múltiples cuentas para eludir los límites del servicio</li>
+                    <li>Compartir sus credenciales con terceros</li>
+                    <li>Intentar acceder a cuentas de otros usuarios o datos a los que no esté autorizado</li>
+                    <li>Usar la Aplicación para actividades ilegales o fraudulentas</li>
+                    <li>Manipular el sistema de gamificación (XP, niveles, logros, freeze days) de forma fraudulenta, incluyendo mediante ingeniería inversa o falsificación de solicitudes al API</li>
+                    <li>Intentar hackear, descompilar, realizar ingeniería inversa o modificar la Aplicación</li>
+                    <li>Usar bots, scrapers o scripts automatizados para interactuar con el servicio</li>
+                    <li>Interferir con el funcionamiento de los servidores o eludir los mecanismos de limitación de tasa</li>
                 </ul>
             </section>
 
@@ -149,7 +148,7 @@
                 <p class="text-soft-gray mt-2">Al usar la Aplicación, nos otorga una licencia limitada para almacenar y procesar su contenido con el único fin de proporcionar el servicio.</p>
 
                 <h3 class="text-xl font-medium text-slate mt-6">5.3 Responsabilidad</h3>
-                <p class="text-soft-gray mt-2">Usted es responsable del contenido que ingresa, incluyendo nombres de hábitos y mensajes en funciones sociales.</p>
+                <p class="text-soft-gray mt-2">Usted es responsable del contenido que ingresa, incluyendo nombres de hábitos, objetivos, frases motivacionales personalizadas y cualquier otro texto que introduzca en la Aplicación. No debe introducir contenido que infrinja derechos de terceros, sea ilegal o inapropiado.</p>
             </section>
 
             <!-- 6. Sistema de Gamificación -->
@@ -178,27 +177,39 @@
                 </ul>
             </section>
 
-            <!-- 7. Funciones Sociales -->
+            <!-- 7. Suscripciones Premium y Pagos -->
             <section>
-                <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">7. Funciones Sociales</h2>
-                <p class="text-soft-gray mt-4"><em>Nota: Las funciones sociales no están disponibles para cuentas de invitado.</em></p>
+                <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">7. Suscripciones Premium y Pagos</h2>
 
-                <h3 class="text-xl font-medium text-slate mt-6">7.1 Amigos</h3>
+                <h3 class="text-xl font-medium text-slate mt-6">7.1 Planes Disponibles</h3>
+                <p class="text-soft-gray mt-2">Habitly ofrece funciones premium opcionales mediante los siguientes planes, cuyos precios se muestran en la pantalla de pago (paywall) dentro de la Aplicación:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li>Puede agregar amigos mediante búsqueda de usuarios</li>
-                    <li>Las solicitudes de amistad requieren aceptación mutua</li>
-                    <li>Puede eliminar amigos en cualquier momento</li>
+                    <li><strong>Mensual:</strong> Suscripción recurrente con renovación automática mensual.</li>
+                    <li><strong>Anual:</strong> Suscripción recurrente con renovación automática anual.</li>
+                    <li><strong>De por vida (lifetime):</strong> Compra única sin renovación.</li>
                 </ul>
 
-                <h3 class="text-xl font-medium text-slate mt-6">7.2 Challenges</h3>
+                <h3 class="text-xl font-medium text-slate mt-6">7.2 Procesamiento de Pagos</h3>
+                <p class="text-soft-gray mt-2">Todas las compras y suscripciones se procesan a través de <strong>Google Play Billing</strong> y están sujetas a los términos de Google Play. Habitly no procesa ni almacena datos de tarjetas, cuentas bancarias o medios de pago.</p>
+
+                <h3 class="text-xl font-medium text-slate mt-6">7.3 Renovación y Cancelación</h3>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li>Puede crear y participar en challenges grupales</li>
-                    <li>Los challenges tienen fechas de inicio y fin definidas</li>
-                    <li>El progreso en challenges es visible para los participantes</li>
+                    <li>Las suscripciones se renuevan automáticamente al precio vigente al momento de la renovación, a menos que las cancele antes del final del período actual.</li>
+                    <li>Puede cancelar su suscripción en cualquier momento desde <em>Google Play → Pagos y suscripciones → Suscripciones</em>.</li>
+                    <li>Al cancelar, conservará el acceso premium hasta el final del período ya pagado.</li>
                 </ul>
 
-                <h3 class="text-xl font-medium text-slate mt-6">7.3 Conducta Social</h3>
-                <p class="text-soft-gray mt-2">Nos reservamos el derecho de suspender cuentas que violen las normas de conducta comunitaria.</p>
+                <h3 class="text-xl font-medium text-slate mt-6">7.4 Reembolsos</h3>
+                <p class="text-soft-gray mt-2">Las solicitudes de reembolso se gestionan conforme a las <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" class="text-coral hover:underline">políticas de reembolso de Google Play</a>. Habitly no emite reembolsos directos; si lo permite la ley aplicable, puede solicitar un reembolso a través de Google Play.</p>
+
+                <h3 class="text-xl font-medium text-slate mt-6">7.5 Cambios de Precio y Funciones Premium</h3>
+                <p class="text-soft-gray mt-2">Podemos modificar el conjunto de funciones premium o los precios de los planes. Los cambios de precio no afectarán a suscripciones ya pagadas dentro del período vigente, y le notificaremos con antelación razonable antes de la siguiente renovación.</p>
+            </section>
+
+            <!-- 7.5 Exportación de Datos -->
+            <section>
+                <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">7.5 Exportación de Datos</h2>
+                <p class="text-soft-gray mt-4">La Aplicación permite exportar sus hábitos e historial de registros en formato CSV o PDF desde <em>Ajustes → Exportar Datos</em>. Los archivos generados se guardan localmente en su dispositivo y pueden compartirse a través de la hoja de compartir del sistema. Usted es el único responsable del uso y la distribución posterior de dichos archivos.</p>
             </section>
 
             <!-- 8. Propiedad Intelectual -->
@@ -278,9 +289,9 @@
                 <h3 class="text-xl font-medium text-slate mt-6">11.3 Efectos de la Terminación</h3>
                 <p class="text-soft-gray mt-2">Al terminar su cuenta:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li>Perderá acceso a la Aplicación</li>
-                    <li>Sus datos serán eliminados permanentemente (hábitos, registros, XP, nivel, logros, amigos, challenges)</li>
-                    <li>No tendrá derecho a reembolso (si aplica)</li>
+                    <li>Perderá el acceso a la Aplicación y al contenido asociado a su cuenta.</li>
+                    <li>Sus datos serán eliminados permanentemente (usuario, hábitos, registros, XP, nivel, logros, freeze days, preferencias de frases y onboarding), salvo aquellos que debamos conservar por obligación legal.</li>
+                    <li>Las suscripciones premium activas continúan gestionándose desde Google Play; cualquier reembolso queda sujeto a las políticas de Google Play y a la legislación aplicable.</li>
                 </ul>
             </section>
 

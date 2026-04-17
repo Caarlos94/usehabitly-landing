@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habitly — Gamified Habit Tracker with Challenges</title>
-    <meta name="description" content="Habitly is a gamified habit tracker with XP, achievements, streaks, and social challenges. Build better habits, earn rewards, and compete with friends. Available on Android.">
-    <meta name="keywords" content="habit tracker, habit app, daily habits, streak tracker, gamified habits, XP, achievements, habit challenges, android habit app, freeze days">
+    <title>Habitly — Gamified Habit Tracker with Streaks & XP</title>
+    <meta name="description" content="Habitly is a gamified habit tracker with XP, levels, 30+ achievements, streaks, and freeze days. Build better habits and see real progress. Free on Android.">
+    <meta name="keywords" content="habit tracker, habit app, daily habits, streak tracker, gamified habits, XP, achievements, android habit app, freeze days, habit heatmap, routine tracker">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://usehabitly.app/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Habitly — Gamified Habit Tracker with Challenges">
-    <meta property="og:description" content="Track habits, earn XP, compete with friends. Level up your daily routine.">
+    <meta property="og:title" content="Habitly — Gamified Habit Tracker with Streaks & XP">
+    <meta property="og:description" content="Track habits, build streaks, earn XP, and unlock achievements. Level up your daily routine.">
     <meta property="og:image" content="https://usehabitly.app/images/logo.png">
     <meta property="og:url" content="https://usehabitly.app">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Habitly">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Habitly — Gamified Habit Tracker with Challenges">
-    <meta name="twitter:description" content="Track habits, earn XP, compete with friends. Level up your daily routine.">
+    <meta name="twitter:title" content="Habitly — Gamified Habit Tracker with Streaks & XP">
+    <meta name="twitter:description" content="Track habits, build streaks, earn XP, and unlock achievements. Level up your daily routine.">
     <meta name="twitter:image" content="https://usehabitly.app/images/logo.png">
     <meta name="twitter:site" content="@usehabitly">
 
@@ -40,6 +42,80 @@
     </script>
     -->
 
+    <!-- Structured Data: FAQ Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is Habitly free to use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Habitly is free to download and all core features — habit tracking, streaks, freeze days, XP, levels, achievements, heatmaps, and data export — are included at no cost. An optional Premium plan unlocks extras like custom motivational phrases."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need to create an account to start?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. You can start instantly with Guest Mode using only a username — no email or password required. Guest accounts are limited to 5 active habits, and you can migrate to a full account (email or Google) at any time without losing your progress."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are Freeze Days and how do they work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Freeze Days protect your streak when you can't complete a habit. You start with 2 freeze days, and earn 1 extra every 5 levels. When used, they preserve your streak as if the day had been completed."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I export my habit data?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. From Settings → Export Data, you can export your complete habit history as CSV or PDF, with options to filter by date range (last 30, 90 days, last year, or all time)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Habitly available on iOS?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Not yet. Habitly is currently available only on Android via Google Play. An iOS version is not released at this time."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What languages does Habitly support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Habitly is fully bilingual in English and Spanish, including the habit catalog, achievements, motivational phrases, and all UI text. You can switch languages anytime from settings."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Habitly have social features like friends or challenges?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Habitly is an individual experience focused on personal habit building. There are no friends, no group challenges, and no public leaderboards — your progress is private."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I delete my account and data?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Go to Profile → Settings → Delete Account. This permanently removes your user profile, habits, logs, XP, level, achievements, freeze days, and onboarding preferences from our servers."
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- Structured Data: Mobile Application -->
     <script type="application/ld+json">
     {
@@ -48,9 +124,10 @@
         "name": "Habitly",
         "operatingSystem": "Android",
         "applicationCategory": "HealthApplication",
-        "description": "Gamified habit tracker with XP, achievements, streaks, and social challenges.",
+        "description": "Gamified habit tracker with XP, levels, 30+ achievements, streaks, freeze days, progress heatmap, and data export.",
         "url": "https://usehabitly.app",
         "installUrl": "https://play.google.com/store/apps/details?id=com.habitly.habitly",
+        "inLanguage": ["en", "es"],
         "author": {
             "@type": "Organization",
             "name": "Habitly"
@@ -122,6 +199,27 @@
         .nav-icon:hover {
             transform: scale(1.1);
             opacity: 0.8;
+        }
+
+        /* FAQ accordion */
+        .faq-item {
+            transition: box-shadow 0.2s ease;
+        }
+        .faq-item[open] {
+            box-shadow: 0 6px 20px -12px rgba(0, 0, 0, 0.2);
+        }
+        .faq-item summary {
+            list-style: none;
+            cursor: pointer;
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-icon {
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] .faq-icon {
+            transform: rotate(45deg);
         }
     </style>
 </head>
@@ -209,7 +307,7 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-lg text-slate mb-2">Streaks & Freeze Days</h3>
-                    <p class="text-soft-gray">Build streaks and protect them on tough days. One missed day doesn't erase your progress.</p>
+                    <p class="text-soft-gray">Build streaks and protect them with freeze days — earn one every 5 levels. One missed day won't erase your progress.</p>
                 </div>
 
                 <!-- Feature 3: Smart Reminders -->
@@ -220,7 +318,7 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-lg text-slate mb-2">Smart Reminders</h3>
-                    <p class="text-soft-gray">Custom notifications for each habit. A 24-hour grace period to log yesterday's habits.</p>
+                    <p class="text-soft-gray">Set custom reminder times per habit with daily, weekly, or custom day schedules. Home-screen widget keeps today's habits one tap away.</p>
                 </div>
 
                 <!-- Feature 4: Gamification -->
@@ -231,7 +329,23 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-lg text-slate mb-2">XP & Achievements</h3>
-                    <p class="text-soft-gray">Earn experience points and unlock 35+ achievements. Small rewards that keep you motivated.</p>
+                    <p class="text-soft-gray">Earn XP for every completion, level up, and unlock 30+ achievements — including a few secret ones waiting to be discovered.</p>
+                </div>
+            </div>
+
+            <!-- Secondary features row -->
+            <div class="grid md:grid-cols-3 gap-6 mt-6">
+                <div class="feature-card bg-cream p-6 rounded-2xl">
+                    <h3 class="font-semibold text-slate mb-1">Your Data, Your Way</h3>
+                    <p class="text-soft-gray text-sm">Export your full history to CSV or PDF. Delete your account and data any time, directly from settings.</p>
+                </div>
+                <div class="feature-card bg-cream p-6 rounded-2xl">
+                    <h3 class="font-semibold text-slate mb-1">Start in Seconds</h3>
+                    <p class="text-soft-gray text-sm">Use Guest Mode with no email required, or sign in with Google. Upgrade to a full account later — your data stays.</p>
+                </div>
+                <div class="feature-card bg-cream p-6 rounded-2xl">
+                    <h3 class="font-semibold text-slate mb-1">English & Spanish</h3>
+                    <p class="text-soft-gray text-sm">Fully bilingual interface, light and dark themes, and custom sound and haptic feedback.</p>
                 </div>
             </div>
         </div>
@@ -249,6 +363,102 @@
                 <img src="images/mockup_habits.png" alt="Habitly habits list showing daily streaks and mini heatmap grid" class="w-52 md:w-60 lg:w-64">
                 <img src="images/mockup_progress.png" alt="Habitly year in review heatmap and monthly calendar view" class="w-52 md:w-60 lg:w-64">
                 <img src="images/mockup_achievement.png" alt="Habitly achievement unlocked popup with XP reward" class="w-52 md:w-60 lg:w-64">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate mb-4">Frequently Asked Questions</h2>
+                <p class="text-soft-gray text-lg">Everything you need to know before you start building habits.</p>
+            </div>
+
+            <div class="space-y-4">
+                <details class="faq-item bg-cream rounded-2xl p-6 group">
+                    <summary class="flex items-center justify-between font-semibold text-slate text-lg">
+                        <span>Is Habitly free to use?</span>
+                        <svg class="faq-icon w-6 h-6 text-coral flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </summary>
+                    <p class="text-soft-gray mt-4">Yes. Habitly is free to download and all core features — habit tracking, streaks, freeze days, XP, levels, achievements, heatmaps, and data export — are included at no cost. An optional Premium plan unlocks extras like custom motivational phrases.</p>
+                </details>
+
+                <details class="faq-item bg-cream rounded-2xl p-6 group">
+                    <summary class="flex items-center justify-between font-semibold text-slate text-lg">
+                        <span>Do I need to create an account to start?</span>
+                        <svg class="faq-icon w-6 h-6 text-coral flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </summary>
+                    <p class="text-soft-gray mt-4">No. You can start instantly with Guest Mode using only a username — no email or password required. Guest accounts are limited to 5 active habits, and you can migrate to a full account (email or Google) at any time without losing your progress.</p>
+                </details>
+
+                <details class="faq-item bg-cream rounded-2xl p-6 group">
+                    <summary class="flex items-center justify-between font-semibold text-slate text-lg">
+                        <span>What are Freeze Days and how do they work?</span>
+                        <svg class="faq-icon w-6 h-6 text-coral flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </summary>
+                    <p class="text-soft-gray mt-4">Freeze Days protect your streak on days when you can't complete a habit. You start with 2 freeze days and earn 1 extra every 5 levels. When used, a freeze day preserves your streak as if the day had been completed — so one rough day doesn't erase weeks of progress.</p>
+                </details>
+
+                <details class="faq-item bg-cream rounded-2xl p-6 group">
+                    <summary class="flex items-center justify-between font-semibold text-slate text-lg">
+                        <span>Can I export my habit data?</span>
+                        <svg class="faq-icon w-6 h-6 text-coral flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </summary>
+                    <p class="text-soft-gray mt-4">Yes. From <em>Settings → Export Data</em> you can export your complete habit history as CSV or PDF, with filters for last 30 days, 90 days, last year, or all time. The file is saved locally on your device and you choose whether to share it.</p>
+                </details>
+
+                <details class="faq-item bg-cream rounded-2xl p-6 group">
+                    <summary class="flex items-center justify-between font-semibold text-slate text-lg">
+                        <span>Is Habitly available on iOS?</span>
+                        <svg class="faq-icon w-6 h-6 text-coral flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </summary>
+                    <p class="text-soft-gray mt-4">Not yet. Habitly is currently available only on Android through Google Play. We're focused on polishing the Android experience before expanding to other platforms.</p>
+                </details>
+
+                <details class="faq-item bg-cream rounded-2xl p-6 group">
+                    <summary class="flex items-center justify-between font-semibold text-slate text-lg">
+                        <span>What languages does Habitly support?</span>
+                        <svg class="faq-icon w-6 h-6 text-coral flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </summary>
+                    <p class="text-soft-gray mt-4">Habitly is fully bilingual in <strong>English</strong> and <strong>Spanish</strong>, including the habit catalog, achievements, motivational phrases, and every UI string. You can switch languages anytime from settings.</p>
+                </details>
+
+                <details class="faq-item bg-cream rounded-2xl p-6 group">
+                    <summary class="flex items-center justify-between font-semibold text-slate text-lg">
+                        <span>Does Habitly have social features like friends or challenges?</span>
+                        <svg class="faq-icon w-6 h-6 text-coral flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </summary>
+                    <p class="text-soft-gray mt-4">No. Habitly is an individual experience focused on personal habit building. There are no friends, group challenges, or public leaderboards — your progress is completely private.</p>
+                </details>
+
+                <details class="faq-item bg-cream rounded-2xl p-6 group">
+                    <summary class="flex items-center justify-between font-semibold text-slate text-lg">
+                        <span>How do I delete my account and data?</span>
+                        <svg class="faq-icon w-6 h-6 text-coral flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </summary>
+                    <p class="text-soft-gray mt-4">Go to <em>Profile → Settings → Delete Account</em>. This permanently removes your user profile, habits, logs, XP, level, achievements, freeze days, and onboarding preferences from our servers. See our <a href="/privacy.html" class="text-coral hover:underline">Privacy Policy</a> for details.</p>
+                </details>
+            </div>
+
+            <div class="text-center mt-10">
+                <p class="text-soft-gray">Still have questions? <a href="mailto:habitlyhq@gmail.com" class="text-coral hover:underline font-medium">Contact us</a></p>
             </div>
         </div>
     </section>

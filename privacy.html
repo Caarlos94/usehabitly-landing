@@ -46,7 +46,7 @@
     <!-- Content -->
     <main class="max-w-4xl mx-auto px-6 py-12">
         <h1 class="text-3xl md:text-4xl font-bold text-slate mb-2">Política de Privacidad de Habitly</h1>
-        <p class="text-soft-gray mb-8"><strong>Última actualización:</strong> Enero 2026</p>
+        <p class="text-soft-gray mb-8"><strong>Última actualización:</strong> Abril 2026</p>
 
         <div class="prose prose-slate max-w-none space-y-8">
 
@@ -62,12 +62,13 @@
                 <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">2. Información que Recopilamos</h2>
 
                 <h3 class="text-xl font-medium text-slate mt-6">2.1 Información de Cuenta</h3>
-                <p class="text-soft-gray mt-2">Cuando crea una cuenta, recopilamos:</p>
+                <p class="text-soft-gray mt-2">Cuando crea una cuenta con correo y contraseña, recopilamos:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
                     <li>Nombre de usuario</li>
                     <li>Dirección de correo electrónico</li>
-                    <li>Contraseña (almacenada de forma segura mediante encriptación)</li>
+                    <li>Contraseña (almacenada en forma de hash con bcrypt; nunca en texto plano)</li>
                     <li>Foto de perfil (opcional)</li>
+                    <li>Consentimiento de marketing (GDPR, desactivado por defecto)</li>
                 </ul>
 
                 <p class="text-soft-gray mt-4">Si elige iniciar sesión con Google:</p>
@@ -82,27 +83,27 @@
                     <p class="text-soft-gray mt-1">Si elige usar la aplicación como invitado:</p>
                     <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
                         <li>Solo recopilamos un nombre de usuario</li>
-                        <li>No se requiere correo electrónico</li>
-                        <li>Sus datos se almacenan y pueden migrarse a una cuenta completa posteriormente</li>
-                        <li>El modo invitado tiene funcionalidades limitadas (máximo 5 hábitos, sin funciones sociales)</li>
+                        <li>No se requiere correo electrónico ni contraseña</li>
+                        <li>Se genera un token de invitado que permite migrar sus datos a una cuenta completa más adelante</li>
+                        <li>El modo invitado tiene funcionalidades limitadas (máximo 5 hábitos activos)</li>
                     </ul>
                 </div>
 
                 <h3 class="text-xl font-medium text-slate mt-6">2.2 Información de Uso de la Aplicación</h3>
                 <p class="text-soft-gray mt-2">Para proporcionar nuestros servicios, almacenamos:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li>Hábitos que crea (nombre, frecuencia, objetivos, iconos, colores)</li>
-                    <li>Registros de completación de hábitos (fechas y horarios)</li>
-                    <li>Estadísticas de progreso (rachas, días perfectos)</li>
-                    <li>Nivel de experiencia y puntos XP (sistema de gamificación)</li>
-                    <li>Logros desbloqueados</li>
-                    <li>Freeze Days utilizados (protección de racha)</li>
-                    <li>Challenges en los que participa</li>
-                    <li>Lista de amigos dentro de la aplicación</li>
+                    <li>Hábitos que crea (nombre, frecuencia, objetivo, icono, color, duración, hora de recordatorio, días programados, estado de pausa)</li>
+                    <li>Registros de completación de hábitos (fecha, marca de tiempo, hora local del dispositivo al completar, XP otorgado)</li>
+                    <li>Estadísticas de progreso (rachas actuales e históricas, días perfectos)</li>
+                    <li>Nivel de experiencia, puntos XP y estado del sistema de gamificación</li>
+                    <li>Logros desbloqueados y fecha de desbloqueo</li>
+                    <li>Historial de Freeze Days (fecha de uso, origen, racha y nivel al momento del uso)</li>
+                    <li>Preferencias sobre frases motivacionales (favoritas u ocultas)</li>
                 </ul>
+                <p class="text-soft-gray mt-2">La hora local al completar un hábito se utiliza exclusivamente para evaluar logros de tipo "Madrugador" o "Búho Nocturno"; no se rastrea ni comparte con terceros.</p>
 
                 <h3 class="text-xl font-medium text-slate mt-6">2.3 Preferencias de Onboarding</h3>
-                <p class="text-soft-gray mt-2">Durante la configuración inicial, puede proporcionarnos:</p>
+                <p class="text-soft-gray mt-2">Durante la configuración inicial, puede proporcionarnos de forma opcional:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
                     <li>Objetivo principal de uso</li>
                     <li>Área de enfoque preferida</li>
@@ -111,12 +112,13 @@
                     <li>Tipo de motivación preferida</li>
                 </ul>
 
-                <h3 class="text-xl font-medium text-slate mt-6">2.4 Información Técnica</h3>
+                <h3 class="text-xl font-medium text-slate mt-6">2.4 Información Técnica y del Dispositivo</h3>
                 <p class="text-soft-gray mt-2">Para el funcionamiento de la aplicación, accedemos a:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
                     <li>Estado de conexión a internet</li>
-                    <li>Zona horaria del dispositivo</li>
-                    <li>Configuración de notificaciones</li>
+                    <li>Zona horaria y configuración regional (idioma) del dispositivo</li>
+                    <li>Configuración de notificaciones y permisos de alarma exacta</li>
+                    <li>Preferencias locales (tema claro/oscuro, idioma, orden de hábitos, sonidos y hápticos) almacenadas en el dispositivo</li>
                 </ul>
 
                 <div class="bg-coral/10 border-l-4 border-coral p-4 mt-4 rounded-r-lg">
@@ -138,23 +140,24 @@
                 <p class="text-soft-gray mt-4">Utilizamos la información recopilada para:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
                     <li>Crear y gestionar su cuenta de usuario</li>
-                    <li>Permitir el seguimiento de sus hábitos</li>
-                    <li>Calcular estadísticas y progreso personal</li>
-                    <li>Enviar recordatorios de hábitos (notificaciones locales)</li>
-                    <li>Proporcionar el sistema de gamificación (XP, niveles, logros)</li>
-                    <li>Facilitar funciones sociales (amigos, challenges)</li>
-                    <li>Mejorar la experiencia de usuario</li>
-                    <li>Diagnosticar y corregir errores técnicos</li>
+                    <li>Permitir el seguimiento de sus hábitos y sincronizarlos entre su dispositivo y nuestros servidores</li>
+                    <li>Calcular estadísticas, rachas, heatmaps y progreso personal</li>
+                    <li>Enviar recordatorios de hábitos (notificaciones locales en el dispositivo)</li>
+                    <li>Sincronizar los hábitos del día con el widget de la pantalla de inicio de Android</li>
+                    <li>Proporcionar el sistema de gamificación (XP, niveles, logros, freeze days)</li>
+                    <li>Generar exportaciones de sus datos en formato CSV o PDF cuando usted lo solicita</li>
+                    <li>Habilitar funciones premium y gestionar el estado de su suscripción</li>
+                    <li>Diagnosticar y corregir errores técnicos (ver Firebase Crashlytics)</li>
                     <li>Responder a sus consultas de soporte</li>
                 </ul>
 
                 <div class="bg-green-50 border-l-4 border-green-500 p-4 mt-4 rounded-r-lg">
                     <h4 class="font-semibold text-slate">NO utilizamos su información para:</h4>
                     <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                        <li>Mostrar publicidad personalizada</li>
-                        <li>Vender datos a terceros</li>
-                        <li>Crear perfiles para marketing</li>
-                        <li>Rastrear su actividad fuera de la aplicación</li>
+                        <li>Mostrar publicidad de terceros dentro de la aplicación</li>
+                        <li>Vender ni alquilar sus datos a terceros</li>
+                        <li>Crear perfiles de comportamiento para marketing fuera de la aplicación</li>
+                        <li>Rastrear su actividad fuera de Habitly</li>
                     </ul>
                 </div>
             </section>
@@ -165,18 +168,20 @@
 
                 <h3 class="text-xl font-medium text-slate mt-6">4.1 Dónde Almacenamos sus Datos</h3>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li>Los datos de cuenta y uso se almacenan en servidores seguros (PostgreSQL)</li>
-                    <li>Los tokens de autenticación se almacenan de forma encriptada en su dispositivo</li>
-                    <li>Las preferencias locales se guardan en el almacenamiento del dispositivo</li>
+                    <li>Los datos de cuenta, hábitos, registros y gamificación se almacenan en una base de datos PostgreSQL en servidores protegidos</li>
+                    <li>Los tokens de acceso y refresco se guardan cifrados en el almacenamiento seguro del dispositivo (<code>flutter_secure_storage</code>)</li>
+                    <li>Las preferencias locales (tema, idioma, orden de hábitos, tutoriales vistos) se guardan con <code>SharedPreferences</code> en el dispositivo</li>
+                    <li>No almacenamos ninguna base de datos local de hábitos: toda la información operativa vive en el servidor y se solicita bajo demanda</li>
                 </ul>
 
                 <h3 class="text-xl font-medium text-slate mt-6">4.2 Medidas de Seguridad</h3>
                 <p class="text-soft-gray mt-2">Implementamos las siguientes medidas de protección:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li>Encriptación de contraseñas mediante algoritmos seguros (bcrypt)</li>
+                    <li>Hash de contraseñas con bcrypt (nunca se almacena la contraseña en texto plano)</li>
                     <li>Comunicación cifrada mediante HTTPS/TLS</li>
-                    <li>Tokens de acceso con expiración automática</li>
-                    <li>Almacenamiento seguro y encriptado de credenciales en el dispositivo</li>
+                    <li>Autenticación basada en JWT con tokens de acceso de corta duración (1h) y tokens de refresco de larga duración (45 días), con rotación automática</li>
+                    <li>Validación y saneamiento de entradas en el servidor, con limitación de tasa (rate limiting) por IP y usuario</li>
+                    <li>Almacenamiento seguro de credenciales en el dispositivo</li>
                 </ul>
             </section>
 
@@ -189,13 +194,12 @@
                 <p class="text-soft-gray mt-2">Si elige iniciar sesión con Google, utilizamos el servicio de autenticación de Google. Esta información está sujeta a la <a href="https://policies.google.com/privacy" target="_blank" class="text-coral hover:underline">Política de Privacidad de Google</a>.</p>
                 <p class="text-soft-gray mt-2">Solo recibimos su nombre, correo electrónico e identificador único de Google. No accedemos a otros datos de su cuenta de Google.</p>
 
-                <h3 class="text-xl font-medium text-slate mt-6">5.2 Firebase (Google)</h3>
-                <p class="text-soft-gray mt-2">Utilizamos servicios de Firebase para:</p>
-                <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li><strong>Firebase Crashlytics:</strong> Recopilación de informes de errores para mejorar la estabilidad</li>
-                    <li><strong>Firebase Analytics:</strong> Análisis agregado de uso de la aplicación (puede estar desactivado)</li>
-                </ul>
-                <p class="text-soft-gray mt-2">Estos servicios están sujetos a la <a href="https://firebase.google.com/support/privacy" target="_blank" class="text-coral hover:underline">Política de Privacidad de Firebase</a>.</p>
+                <h3 class="text-xl font-medium text-slate mt-6">5.2 Firebase Crashlytics (Google)</h3>
+                <p class="text-soft-gray mt-2">Utilizamos <strong>Firebase Crashlytics</strong> únicamente en builds de producción para recopilar informes de fallos y ayudarnos a mejorar la estabilidad. En builds de desarrollo/depuración, Crashlytics está desactivado.</p>
+                <p class="text-soft-gray mt-2">Este servicio está sujeto a la <a href="https://firebase.google.com/support/privacy" target="_blank" class="text-coral hover:underline">Política de Privacidad de Firebase</a>.</p>
+
+                <h3 class="text-xl font-medium text-slate mt-6">5.3 Google Play y procesadores de pago</h3>
+                <p class="text-soft-gray mt-2">Las suscripciones y compras dentro de la aplicación se procesan mediante <strong>Google Play Billing</strong>. Habitly no recibe ni almacena datos de tarjeta de crédito ni de pago; únicamente recibe de Google un identificador de transacción y el estado de la suscripción. Estos datos están sujetos a la <a href="https://policies.google.com/privacy" target="_blank" class="text-coral hover:underline">Política de Privacidad de Google</a>.</p>
             </section>
 
             <!-- 6. Permisos de la Aplicación -->
@@ -214,10 +218,12 @@
                         <tbody class="text-soft-gray">
                             <tr><td class="border border-gray-200 px-4 py-2">Internet</td><td class="border border-gray-200 px-4 py-2">Sincronizar datos con el servidor</td></tr>
                             <tr><td class="border border-gray-200 px-4 py-2">Notificaciones</td><td class="border border-gray-200 px-4 py-2">Enviar recordatorios de hábitos</td></tr>
-                            <tr><td class="border border-gray-200 px-4 py-2">Alarmas exactas</td><td class="border border-gray-200 px-4 py-2">Programar recordatorios precisos</td></tr>
-                            <tr><td class="border border-gray-200 px-4 py-2">Vibración</td><td class="border border-gray-200 px-4 py-2">Alertas de notificaciones</td></tr>
-                            <tr><td class="border border-gray-200 px-4 py-2">Acceso a galería</td><td class="border border-gray-200 px-4 py-2">Seleccionar foto de perfil (opcional)</td></tr>
-                            <tr><td class="border border-gray-200 px-4 py-2">Optimización de batería</td><td class="border border-gray-200 px-4 py-2">Garantizar entrega de recordatorios</td></tr>
+                            <tr><td class="border border-gray-200 px-4 py-2">Alarmas exactas (SCHEDULE_EXACT_ALARM)</td><td class="border border-gray-200 px-4 py-2">Programar recordatorios en la hora exacta elegida por usted</td></tr>
+                            <tr><td class="border border-gray-200 px-4 py-2">Vibración</td><td class="border border-gray-200 px-4 py-2">Retroalimentación háptica al completar un hábito (opcional)</td></tr>
+                            <tr><td class="border border-gray-200 px-4 py-2">Acceso a fotos / galería</td><td class="border border-gray-200 px-4 py-2">Seleccionar foto de perfil (opcional)</td></tr>
+                            <tr><td class="border border-gray-200 px-4 py-2">Optimización de batería</td><td class="border border-gray-200 px-4 py-2">Evitar que el sistema retrase o cancele los recordatorios</td></tr>
+                            <tr><td class="border border-gray-200 px-4 py-2">Widget de pantalla de inicio</td><td class="border border-gray-200 px-4 py-2">Mostrar los hábitos del día en un widget del launcher de Android</td></tr>
+                            <tr><td class="border border-gray-200 px-4 py-2">Almacenamiento (exportación)</td><td class="border border-gray-200 px-4 py-2">Guardar y compartir los archivos CSV/PDF que usted exporta</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -229,15 +235,15 @@
                 <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">7. Compartir Información</h2>
 
                 <h3 class="text-xl font-medium text-slate mt-6">7.1 Con Otros Usuarios</h3>
-                <p class="text-soft-gray mt-2">Si utiliza funciones sociales, otros usuarios pueden ver:</p>
-                <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li>Su nombre de usuario</li>
-                    <li>Su foto de perfil (si la configuró)</li>
-                    <li>Su progreso en challenges compartidos</li>
-                    <li>Su posición en tablas de clasificación</li>
-                </ul>
+                <p class="text-soft-gray mt-2">Habitly <strong>no</strong> incluye actualmente funciones sociales (amigos, challenges grupales ni tablas de clasificación). Sus datos de hábitos y progreso son privados y únicamente visibles para usted dentro de su cuenta.</p>
 
-                <h3 class="text-xl font-medium text-slate mt-6">7.2 No Vendemos sus Datos</h3>
+                <h3 class="text-xl font-medium text-slate mt-6">7.2 Exportaciones Iniciadas por Usted</h3>
+                <p class="text-soft-gray mt-2">Cuando usted utiliza la función de exportación de datos, se genera un archivo CSV o PDF en su dispositivo y puede compartirlo manualmente mediante la hoja de compartir del sistema. Habitly no envía estos archivos a ningún servidor.</p>
+
+                <h3 class="text-xl font-medium text-slate mt-6">7.3 Requerimientos Legales</h3>
+                <p class="text-soft-gray mt-2">Podremos divulgar información cuando sea requerido por ley, una orden judicial válida o para proteger los derechos, la propiedad o la seguridad de Habitly, sus usuarios o terceros.</p>
+
+                <h3 class="text-xl font-medium text-slate mt-6">7.4 No Vendemos sus Datos</h3>
                 <p class="text-soft-gray mt-2">Nunca vendemos, alquilamos ni compartimos su información personal con terceros para fines comerciales o de marketing.</p>
             </section>
 
@@ -245,29 +251,37 @@
             <section>
                 <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">8. Retención de Datos</h2>
                 <ul class="list-disc list-inside text-soft-gray mt-4 space-y-1">
-                    <li>Mantenemos sus datos mientras su cuenta esté activa</li>
-                    <li>Si elimina su cuenta, todos sus datos serán eliminados permanentemente</li>
-                    <li>Los registros de hábitos se conservan para mantener sus estadísticas históricas</li>
+                    <li>Mantenemos sus datos mientras su cuenta esté activa.</li>
+                    <li>Si elimina su cuenta desde <em>Perfil → Ajustes → Eliminar Cuenta</em>, todos los datos relacionados (usuario, hábitos, registros, logros, freeze days, preferencias de frases y onboarding) se eliminan en cascada de forma permanente.</li>
+                    <li>Las cuentas de invitado que no se migran a una cuenta completa pueden ser eliminadas periódicamente tras un largo período de inactividad.</li>
+                    <li>Los registros técnicos (logs del servidor) se conservan por un tiempo limitado con fines de depuración y seguridad, y posteriormente se rotan o eliminan.</li>
                 </ul>
             </section>
 
             <!-- 9. Sus Derechos -->
             <section>
                 <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">9. Sus Derechos</h2>
-                <p class="text-soft-gray mt-4">Usted tiene derecho a:</p>
+                <p class="text-soft-gray mt-4">Dependiendo de su jurisdicción (por ejemplo, si reside en la Unión Europea, Reino Unido, California o México), usted tiene derecho a:</p>
                 <ul class="list-disc list-inside text-soft-gray mt-2 space-y-1">
-                    <li><strong>Acceso:</strong> Solicitar una copia de sus datos personales</li>
-                    <li><strong>Rectificación:</strong> Corregir información inexacta</li>
-                    <li><strong>Eliminación:</strong> Solicitar la eliminación de su cuenta y datos</li>
-                    <li><strong>Portabilidad:</strong> Solicitar sus datos en formato legible</li>
+                    <li><strong>Acceso:</strong> Solicitar una copia de sus datos personales.</li>
+                    <li><strong>Rectificación:</strong> Corregir información inexacta directamente desde la pantalla de perfil o escribiéndonos.</li>
+                    <li><strong>Eliminación:</strong> Eliminar su cuenta y todos sus datos desde <em>Perfil → Ajustes → Eliminar Cuenta</em>, o solicitándonos por correo.</li>
+                    <li><strong>Portabilidad:</strong> Exportar sus hábitos y registros en formato CSV o PDF desde <em>Ajustes → Exportar Datos</em>.</li>
+                    <li><strong>Oposición y retirada de consentimiento:</strong> Retirar el consentimiento de marketing en cualquier momento desde los ajustes de la cuenta.</li>
                 </ul>
-                <p class="text-soft-gray mt-2">Para ejercer estos derechos, contáctenos a través de la información proporcionada en la sección de Contacto.</p>
+                <p class="text-soft-gray mt-2">Para ejercer cualquiera de estos derechos, contáctenos a través del correo electrónico indicado en la sección de Contacto. Responderemos dentro de los plazos exigidos por la legislación aplicable.</p>
             </section>
 
             <!-- 10. Privacidad de Menores -->
             <section>
                 <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">10. Privacidad de Menores</h2>
-                <p class="text-soft-gray mt-4">Habitly no está dirigida a menores de 13 años. No recopilamos intencionalmente información de niños menores de 13 años. Si descubrimos que hemos recopilado información de un menor sin verificación del consentimiento parental, tomaremos medidas para eliminar esa información.</p>
+                <p class="text-soft-gray mt-4">Habitly no está dirigida a menores de 13 años. No recopilamos intencionalmente información personal de niños menores de 13 años (ni de la edad mínima equivalente exigida por la legislación local, p. ej. 16 años en determinados países de la UE). Si descubrimos que hemos recopilado información de un menor sin verificación del consentimiento parental, tomaremos medidas para eliminar esa información sin demora.</p>
+            </section>
+
+            <!-- 10.5 Transferencias Internacionales -->
+            <section>
+                <h2 class="text-2xl font-semibold text-slate border-b border-gray-200 pb-2">10.5 Transferencias Internacionales de Datos</h2>
+                <p class="text-soft-gray mt-4">Habitly opera desde México y puede procesar sus datos en servidores ubicados fuera de su país de residencia. Al utilizar la aplicación, usted reconoce que sus datos pueden ser transferidos y procesados en jurisdicciones con leyes de protección de datos distintas a las de su país. Aplicamos medidas contractuales y técnicas razonables para proteger dichas transferencias.</p>
             </section>
 
             <!-- 11. Cambios a esta Política -->
