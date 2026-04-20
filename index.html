@@ -53,7 +53,7 @@
                 "name": "Is Habitly free to use?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Habitly is free to download and all core features — habit tracking, streaks, freeze days, XP, levels, achievements, heatmaps, and data export — are included at no cost. An optional Premium plan unlocks extras like custom motivational phrases."
+                    "text": "Yes. Habitly is free to download, and core features — habit tracking, streaks, XP, levels, achievements, heatmaps, and CSV/PDF export — are included at no cost. An optional Premium plan unlocks unlimited habits, full stats & insights, Android home-screen widgets, custom reminder messages per habit, custom motivational phrases, and bigger freeze-day grants (5 per 5-level milestone plus 5 extra every 30 days)."
                 }
             },
             {
@@ -61,7 +61,7 @@
                 "name": "Do I need to create an account to start?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. You can start instantly with Guest Mode using only a username — no email or password required. Guest accounts are limited to 5 active habits, and you can migrate to a full account (email or Google) at any time without losing your progress."
+                    "text": "No. You can start instantly with Guest Mode using only a username — no email or password required. Free accounts (guest or registered) are limited to 5 active habits. You can migrate a guest account to a full email or Google account at any time without losing your progress, and upgrade to Premium for unlimited habits."
                 }
             },
             {
@@ -69,7 +69,7 @@
                 "name": "What are Freeze Days and how do they work?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Freeze Days protect your streak when you can't complete a habit. You start with 2 freeze days, and earn 3 extra every 5 levels. When used, they preserve your streak as if the day had been completed."
+                    "text": "Freeze Days protect your streak when you can't complete a habit. You start with 2 freeze days and earn 3 extra every 5 levels. Premium users receive 5 per 5-level milestone plus 5 additional freeze days automatically every 30 days. When used, a freeze day preserves your streak as if the day had been completed."
                 }
             },
             {
@@ -307,7 +307,7 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-lg text-slate mb-2">Streaks & Freeze Days</h3>
-                    <p class="text-soft-gray">Build streaks and protect them with freeze days — earn three every 5 levels. One missed day won't erase your progress.</p>
+                    <p class="text-soft-gray">Build streaks and protect them with freeze days. Start with 2, earn 3 more every 5 levels — Premium doubles the milestone grant and adds 5 every 30 days.</p>
                 </div>
 
                 <!-- Feature 3: Smart Reminders -->
@@ -318,7 +318,7 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-lg text-slate mb-2">Smart Reminders</h3>
-                    <p class="text-soft-gray">Set custom reminder times per habit with daily, weekly, or custom day schedules. Home-screen widget keeps today's habits one tap away.</p>
+                    <p class="text-soft-gray">Set custom reminder times for every habit with daily, weekly, or specific-day schedules. Personalize the reminder text and pin today's habits to your home screen with Premium.</p>
                 </div>
 
                 <!-- Feature 4: Gamification -->
@@ -348,6 +348,79 @@
                     <p class="text-soft-gray text-sm">Fully bilingual interface, light and dark themes, and custom sound and haptic feedback.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-coral/10 text-coral text-sm font-semibold px-4 py-1.5 rounded-full mb-4">Habitly Premium</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate mb-4">Go Further When You're Ready</h2>
+                <p class="text-soft-gray text-lg max-w-2xl mx-auto">Everything in the free plan stays free. Premium removes limits and unlocks extras for people who are serious about their routine.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-12">
+                <div class="flex items-start gap-3 bg-cream p-4 rounded-xl">
+                    <span class="text-coral text-xl leading-none">✓</span>
+                    <div>
+                        <h3 class="font-semibold text-slate">Unlimited habits</h3>
+                        <p class="text-soft-gray text-sm">No 5-habit cap.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-cream p-4 rounded-xl">
+                    <span class="text-coral text-xl leading-none">✓</span>
+                    <div>
+                        <h3 class="font-semibold text-slate">Full stats &amp; insights</h3>
+                        <p class="text-soft-gray text-sm">Every chart, trend, and pattern unlocked.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-cream p-4 rounded-xl">
+                    <span class="text-coral text-xl leading-none">✓</span>
+                    <div>
+                        <h3 class="font-semibold text-slate">Home-screen widgets</h3>
+                        <p class="text-soft-gray text-sm">Today's habits list and streak heatmap on your Android launcher.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-cream p-4 rounded-xl">
+                    <span class="text-coral text-xl leading-none">✓</span>
+                    <div>
+                        <h3 class="font-semibold text-slate">Custom reminder messages</h3>
+                        <p class="text-soft-gray text-sm">Write your own reminder text per habit.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-cream p-4 rounded-xl">
+                    <span class="text-coral text-xl leading-none">✓</span>
+                    <div>
+                        <h3 class="font-semibold text-slate">Custom motivational phrases</h3>
+                        <p class="text-soft-gray text-sm">Replace the default quote library with your own.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-cream p-4 rounded-xl">
+                    <span class="text-coral text-xl leading-none">✓</span>
+                    <div>
+                        <h3 class="font-semibold text-slate">Bigger freeze-day grants</h3>
+                        <p class="text-soft-gray text-sm">5 every 5 levels (vs. 3 free) + 5 automatically every 30 days.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 text-center">
+                    <h3 class="font-semibold text-slate mb-1">Monthly</h3>
+                    <p class="text-soft-gray text-sm">Flexible month-to-month</p>
+                </div>
+                <div class="bg-white border-2 border-coral rounded-2xl p-6 text-center relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-coral text-white text-xs font-semibold px-3 py-1 rounded-full">Most popular</span>
+                    <h3 class="font-semibold text-slate mb-1">Yearly</h3>
+                    <p class="text-soft-gray text-sm">5-day free trial · Best value</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 text-center">
+                    <h3 class="font-semibold text-slate mb-1">Lifetime</h3>
+                    <p class="text-soft-gray text-sm">Pay once, keep forever</p>
+                </div>
+            </div>
+            <p class="text-center text-soft-gray text-sm mt-6">Regional pricing shown in Google Play. Subscriptions processed through Google Play Billing — cancel anytime.</p>
         </div>
     </section>
 
@@ -383,7 +456,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
                         </svg>
                     </summary>
-                    <p class="text-soft-gray mt-4">Yes. Habitly is free to download and all core features — habit tracking, streaks, freeze days, XP, levels, achievements, heatmaps, and data export — are included at no cost. An optional Premium plan unlocks extras like custom motivational phrases.</p>
+                    <p class="text-soft-gray mt-4">Yes. Habitly is free to download, and core features — habit tracking, streaks, XP, levels, achievements, heatmaps, and CSV/PDF export — are included at no cost. An optional <strong>Premium</strong> plan unlocks unlimited habits, full stats &amp; insights, Android home-screen widgets, custom reminder messages per habit, custom motivational phrases, and bigger freeze-day grants (5 per 5-level milestone plus 5 extra every 30 days).</p>
                 </details>
 
                 <details class="faq-item bg-cream rounded-2xl p-6 group">
@@ -393,7 +466,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
                         </svg>
                     </summary>
-                    <p class="text-soft-gray mt-4">No. You can start instantly with Guest Mode using only a username — no email or password required. Guest accounts are limited to 5 active habits, and you can migrate to a full account (email or Google) at any time without losing your progress.</p>
+                    <p class="text-soft-gray mt-4">No. You can start instantly with Guest Mode using only a username — no email or password required. Free accounts (guest or registered) are limited to 5 active habits. You can migrate a guest account to a full email or Google account at any time without losing your progress, and upgrade to <strong>Premium</strong> for unlimited habits.</p>
                 </details>
 
                 <details class="faq-item bg-cream rounded-2xl p-6 group">
@@ -403,7 +476,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
                         </svg>
                     </summary>
-                    <p class="text-soft-gray mt-4">Freeze Days protect your streak on days when you can't complete a habit. You start with 2 freeze days and earn 3 extra every 5 levels. When used, a freeze day preserves your streak as if the day had been completed — so one rough day doesn't erase weeks of progress.</p>
+                    <p class="text-soft-gray mt-4">Freeze Days protect your streak on days when you can't complete a habit. You start with 2 freeze days and earn 3 extra every 5 levels. <strong>Premium</strong> users receive 5 per 5-level milestone plus 5 additional freeze days automatically every 30 days. When used, a freeze day preserves your streak as if the day had been completed — so one rough day doesn't erase weeks of progress.</p>
                 </details>
 
                 <details class="faq-item bg-cream rounded-2xl p-6 group">
